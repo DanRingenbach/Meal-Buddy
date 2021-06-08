@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Toast",
+        "days": "Monday",
+        "type-of-meal": "Breakfast"
+    },
+    {
+        "name": "Hoagie",
+        "days": "Monday",
+        "type-of-meal": "Lunch"
+    },
+    {
+        "name": "Pizza",
+        "days": "Monday",
+        "type-of-meal": "Dinner"
+    }
+]

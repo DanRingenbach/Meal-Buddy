@@ -1,0 +1,17 @@
+[
+    {
+        "username": "Dan",
+        "email": "dan@upenn.com",
+        "password": "looksgood!"
+    },
+    {
+        "username": "Olivia",
+        "email": "olivia@upenn.com",
+        "password": "looksgood!"
+    },
+    {
+        "username": "Steve",
+        "email": "steve@upenn.com",
+        "password": "looksgood!"
+    }
+]
