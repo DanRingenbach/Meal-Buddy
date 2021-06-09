@@ -40,9 +40,10 @@ Meals.init(
     type_of_meal: {
         type: DataTypes.STRING,
         allowNull: true
-    }
+    },
   },
   {
+  
     sequelize,
     timestamps: false,
     freezeTableName: true,

@@ -1,17 +1,17 @@
 [
     {
         "name": "Toast",
-        "days": "Monday",
+        "day": "Monday",
         "type-of-meal": "Breakfast"
     },
     {
         "name": "Hoagie",
-        "days": "Monday",
+        "day": "Monday",
         "type-of-meal": "Lunch"
     },
     {
         "name": "Pizza",
-        "days": "Monday",
+        "day": "Monday",
         "type-of-meal": "Dinner"
     }
 ]
