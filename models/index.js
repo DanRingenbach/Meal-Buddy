@@ -11,4 +11,4 @@ Meals.belongsTo(Users, {
 });
 
 
-module.exports = { Users, Meals, Days };
+module.exports = { Users, Meals };
