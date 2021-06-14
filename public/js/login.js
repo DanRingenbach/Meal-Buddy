@@ -40,8 +40,8 @@ const signupFormHandler = async (event) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: testAccount.user, // generated ethereal user
-        pass: testAccount.pass, // generated ethereal password
+        user:  // generated ethereal user
+        pass:  // generated ethereal password
       },
     });
 
@@ -96,3 +96,29 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+
+
+
+// Toggle between sign in & sign up diplays.
+
+const toggleSignup = () => {
+  document
+    .getElementById('login-display').style.display = 'none';
+  document
+    .getElementById('signup-display').style.display = 'block';
+}
+
+const toggleSignin = () => {
+  document
+  .getElementById('login-display').style.display = 'block';
+document
+  .getElementById('signup-display').style.display = 'none';
+}
+
+document
+  .querySelector('#toggle-signup')
+  .addEventListener('click', toggleSignup);
+
+document
+  .querySelector('#toggle-signin')
+  .addEventListener('click', toggleSignin);
