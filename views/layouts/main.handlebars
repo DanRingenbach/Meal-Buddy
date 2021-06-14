@@ -5,33 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meal Planner</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../public/css/style.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
+  {{!-- <link rel="stylesheet" href="/css/style.css"> --}}
 </head>
 
 <body>
-  <div>
-    <header class="col">
+  <div class="">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        
+        <a href="/">Meal Planner</a>
+      </h1>
       <nav>
-        <h1 class="col offset-5 text-primary ">
-          Meal Planner
-        </h1>
         <!-- Conditionally render login or logout links -->
-        {{!-- {{#if logged_in}}
+        {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login" class="row justify-content-md-start">login</a>
+        <a href="/login">login</a>
         {{/if}}
-      </nav> --}}
+      </nav>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
-
+      
     </footer>
   </div>
 
