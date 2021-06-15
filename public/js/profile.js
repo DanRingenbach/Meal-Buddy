@@ -17,9 +17,13 @@ function getMeals() {
         var mealLink = document.createElement("a");
         mealLink.setAttribute("href", `/meal/${data[i].id}`);
         mealLink.textContent = data[i].name;
+        var mealType = document.createElement('a')
+        mealType.textContent = data[i].type_of_meal
+
 
         innerContainer.appendChild(elementHeader)
         innerContainer.appendChild(mealLink)
+        innerContainer.appendChild(mealType)
 
         var buttonContainer = document.createElement('div')
         buttonContainer.setAttribute('class','com-md-4')
@@ -124,12 +128,13 @@ const newFormHandler = async (event) => {
 
   const name = document.querySelector("#meal-name").value.trim();
   const day = document.querySelector("#meal-day").value.trim();
+  const type_of_meal = document.querySelector('#meal-type').value.trim();
   // const description = document.querySelector('#project-desc').value.trim();
 
-  if (name && day) {
+  if (name && day && type_of_meal) {
     const response = await fetch(`/api/meals`, {
       method: "POST",
-      body: JSON.stringify({ name, day }),
+      body: JSON.stringify({ name, day, type_of_meal }),
       headers: {
         "Content-Type": "application/json",
       },
