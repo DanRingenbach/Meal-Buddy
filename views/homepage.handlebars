@@ -3,8 +3,7 @@
 <div class="row mb-4 meal">
   <div class="col-md-5">
     <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
+      
       <a href="/meal/{{meal.id}}">{{meal.name}}</a>
     </h2>
     
@@ -12,7 +11,7 @@
   </div>
   <div class="col-md-7">
     <p>
-      {{meal.description}}
+      {{meal.day}}
     </p>
   </div>
 </div>
