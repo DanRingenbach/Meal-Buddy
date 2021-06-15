@@ -14,15 +14,13 @@
   <div>
     <header class="col">
       <nav>
-        <h1 class="col offset-5 text-primary ">
+        <h1 class="col text-primary ">
           Meal Planner
         </h1>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login" class="row justify-content-md-start">login</a>
         {{/if}}
       </nav>
     </header>
