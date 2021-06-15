@@ -40,8 +40,8 @@ const signupFormHandler = async (event) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user:  // generated ethereal user
-        pass:  // generated ethereal password
+        user: asdfasdf,  // generated ethereal user
+        pass: 1231231 // generated ethereal password
       },
     });
 
