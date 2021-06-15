@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Users } = require('../../models');
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 router.post('/', async (req, res) => {
   try {
@@ -21,7 +22,7 @@ router.post('/', async (req, res) => {
           from: '"Meal Buddy :)" <meal.buddy7@gmail.com>', // sender address
           to: req.body.email , // list of receivers
           subject: "Hello ✔", // Subject line
-          text: "", // plain text body
+          text: "Welcome to Meal Buddy! Be sure to check your meals weekly!", // plain text body
           html: "<b>Welcome to Meal Buddy! Be sure to check your meals weekly!</b>", // html body
         });
       
