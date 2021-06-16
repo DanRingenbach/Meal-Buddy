@@ -31,7 +31,7 @@ Meals.init(
         key: 'id'
       }
     },
-
+// numeral day of week
     day: {
         type: DataTypes.STRING,
         allowNull: false
