@@ -5,21 +5,37 @@ function getMeals() {
     })
     .then(function (data) {
       console.log(data);
-
+      const days = [];
+      let lastMealType = "";
+      let day = {day:"", type_of_meal:"", meals:[]}
       for (i = 0; i < data.length; i++) {
+        if (data[i].type_of_meal !== lastMealType) {
+          if (lastMealType !== "") {
+            days.push(day);
+            day = {day:"", type_of_meal:"", meals:[]}
+          }
+          day.day = data[i].day;
+          day.type_of_meal = data[i].type_of_meal;
+          lastMealType = day.type_of_meal;
+        }
+        day.meals.push(data[i].name);
+      } 
+      days.push(day);
+      console.log(days);
+      for (i = 0; i < days.length; i++) {
         var bigContainer = document.createElement("div");
         bigContainer.setAttribute("class", "row mb-2");
         var innerContainer = document.createElement("div");
-        innerContainer.setAttribute("id", `${data[i].day}-meal`);
+        innerContainer.setAttribute("id", `${days[i].day}-meal`);
         innerContainer.setAttribute("class", "col-md-8 rounded border border-primary");
         var elementHeader = document.createElement("h4");
-        elementHeader.textContent = data[i].day;
+        elementHeader.textContent = days[i].day;
         var mealLink = document.createElement("h2");
-        mealLink.setAttribute("href", `/meal/${data[i].id}`);
-        mealLink.textContent = data[i].name;
+        mealLink.setAttribute("href", `/meal/${days[i].id}`);
+        mealLink.textContent = days[i].meals.join(', ');
         var mealType = document.createElement('h6')
         mealType.setAttribute('class','col-md-6')
-        mealType.textContent = data[i].type_of_meal
+        mealType.textContent = days[i].type_of_meal
 
 
         innerContainer.appendChild(elementHeader)

@@ -5,6 +5,12 @@ const withAuth = require('../../utils/auth');
 router.get('/', withAuth, async (req, res) => {
   try {
     const mealData = await Meals.findAll({
+      order: [
+        'day',
+        // change day of week
+        'type_of_meal',
+        // order by meal type
+      ],
       where: {
         user_id: req.session.user_id
       },
