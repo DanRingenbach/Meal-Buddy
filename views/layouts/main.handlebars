@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Meal Buddy</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
@@ -16,12 +17,17 @@
       <nav>
         <h1 class="col text-primary ">
           Meal Buddy
+
         </h1>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        
+        <div class="col ">
+          <div class="row-auto">
+            <h2>Welcome, {{username}}!</h2>
+          </div>
+        <a href="/profile" class="mr-2">profile</a> |
+        <a href="#" class="ml-1" id="logout">logout</a>
+        </div>
         {{/if}}
       </nav>
     </header>
@@ -30,7 +36,7 @@
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
 
