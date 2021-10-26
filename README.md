@@ -15,6 +15,7 @@ Throughout the creation of this application our team learned how complicated it 
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Screenshot](#screenshot)
 
 
 ## Usage
@@ -45,7 +46,15 @@ Throughout the creation of this application our team learned how complicated it 
 
 ![Repositiory QR Code](qr/repositoryqr.png)
 
+#### Walkthrough Video
+
+[Walkthrough](https://drive.google.com/file/d/1P0liV-ge2uiISZXQ1fj9cAYUPYlscTOh/view)
+
 
 ## License
 
 [MIT License](license.txt)
+
+## Screenshot 
+
+![Screenshot](/screenshot.png "Screenshot")
