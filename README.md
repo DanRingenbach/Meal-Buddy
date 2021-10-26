@@ -15,6 +15,7 @@ Throughout the creation of this application our team learned how complicated it 
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Screenshot](#screenshot)
 
 
 ## Usage
@@ -53,3 +54,7 @@ Throughout the creation of this application our team learned how complicated it 
 ## License
 
 [MIT License](license.txt)
+
+## Screenshot 
+
+![Screenshot](/screenshot.png "Screenshot")
